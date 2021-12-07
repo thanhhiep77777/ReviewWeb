@@ -11,7 +11,8 @@ namespace ReviewWeb.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,9 +23,13 @@ namespace ReviewWeb.Models
         }
     
         public int ID { get; set; }
+        [Required(ErrorMessage ="Username must be entered")]
         public string Username { get; set; }
+        [Required(ErrorMessage = "Password must be entered")]
+        [RegularExpression("^(?=.*[A-Za-z])(?=.*0-9)[A-Za-z0-9]{8,}$", ErrorMessage = "Password should have minimum eight characters, at least one letter and one number")]
         public string Password { get; set; }
         public Nullable<bool> IsAdmin { get; set; }
+        [Required(ErrorMessage ="Email must be entered")]
         public string Email { get; set; }
         public string Fullname { get; set; }
         public string Image { get; set; }
