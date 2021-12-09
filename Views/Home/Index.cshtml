@@ -1,3 +1,918 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<!-- =========================
+       Blog Section
+   ============================== -->
+<section class="blog-section">
+    <div class="container">
+        <div class="row four-grid">
+            <div class="col-md-4 col-lg-3 pl-0">
+                <!-- =========================
+                    Search Option
+                ============================== -->
+                <div class="sidebar-search">
+                    <div class="input-group wd-btn-group col-12 p0">
+                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary wd-btn-search" type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- =========================
+                    Category Option
+                ============================== -->
+                <button type="button" class="btn btn-info collapse-category collapsed" data-toggle="collapse" data-target="#collapse-category">
+                    Our Category <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div id="collapse-category" class="collapse">
+                    <div class="side-bar category category-sm">
+                        <ul class="dropdown-list-menu">
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Tablet</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Visual</a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Handset </p>
+                                <ul class="dropdown-sub-menu">
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Touch</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Button</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Speaker</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Protector</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Mini-pad</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Headphones</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Camera</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Lens</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Laptop</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Desktop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="side-bar category category-md">
+                    <h5 class="title">Category</h5>
+                    <ul class="dropdown-list-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Mobile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Tablet</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Visual</a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Handset </p>
+                            <ul class="dropdown-sub-menu">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Touch</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Button</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Speaker</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Protector</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Mini-pad</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Camera</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Lens</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Laptop</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Desktop</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- =========================
+                    Share Option
+                ============================== -->
+                <div class="side-bar sheare-option">
+                    <h6 class="sheare-title">Share</h6>
+                    <a href="#">
+                        <div class="sheare-box share-facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-pinterest">
+                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-behance">
+                            <i class="fa fa-behance" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-skype">
+                            <i class="fa fa-skype" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-linkedin">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sheare-box share-google">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- =========================
+                    Tags Box Option
+                ============================== -->
+                <div class="recent-post">
+                    <h6 class="product-review-title">Recent Post</h6>
+                    <div class="container">
+                        <div class="row recent-post-box">
+                            <div class="col-4 col-md-12 col-lg-4 col-sm-2"><img src="img/blog-img/recent-post-img-1.jpg" class="img-responsive img-circle" alt="blog-img"></div>
+                            <div class="col-8 col-md-12 col-lg-8 col-sm-8 testimonial-content">
+                                <p>Sony XB950B1 Extra Bass Wireless</p>
+                                <p class="active-color">February 27, 2018</p>
+                            </div>
+                        </div>
+                        <div class="row recent-post-box">
+                            <div class="col-4 col-md-12 col-lg-4 col-sm-2"><img src="img/blog-img/recent-post-img-2.jpg" class="img-responsive img-circle" alt="blog-img"></div>
+                            <div class="col-8 col-md-12 col-lg-8 col-sm-8 testimonial-content">
+                                <p>Sony XB950B1 Extra Bass Wireless</p>
+                                <p class="active-color">February 27, 2018</p>
+                            </div>
+                        </div>
+                        <div class="row recent-post-box">
+                            <div class="col-4 col-md-12 col-lg-4 col-sm-2"><img src="img/blog-img/recent-post-img-3.jpg" class="img-responsive img-circle" alt="blog-img"></div>
+                            <div class="col-8 col-md-12 col-lg-8 col-sm-8 testimonial-content">
+                                <p>Sony XB950B1 Extra Bass Wireless</p>
+                                <p class="active-color">February 27, 2018</p>
+                            </div>
+                        </div>
+                        <div class="row recent-post-box">
+                            <div class="col-4 col-md-12 col-lg-4 col-sm-2"><img src="img/blog-img/recent-post-img-4.jpg" class="img-responsive img-circle" alt="blog-img"></div>
+                            <div class="col-8 col-md-12 col-lg-8 col-sm-8 testimonial-content">
+                                <p>Sony XB950B1 Extra Bass Wireless</p>
+                                <p class="active-color">February 27, 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =========================
+                    Archive Option
+                ============================== -->
+                <div class="side-bar archive-option">
+                    <h6 class="archive-review-title">Archive</h6>
+                    <p><a href="#">February   2018 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+                    <p><a href="#">March   2018  <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+                    <p><a href="#">April   2018  <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+                    <p><a href="#">May   2018   <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+                </div>
+
+                <!-- =========================
+                    Tags Box Option
+                ============================== -->
+                <div class="side-bar tags-box">
+                    <h5 class="title">Tags</h5>
+                    <ul>
+                        <li><a href="#">Comerce </a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">market</a></li>
+                        <li><a href="#">mobile</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Comerce </a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">market</a></li>
+                        <li><a href="#">mobile</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- =========================
+                    Archive Option
+                ============================== -->
+                <div class="side-bar instagram-option">
+                    <h6 class="instagram-review-title">Instagram</h6>
+                    <a href="#"><img src="img/blog-img/instagram-img-1.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                    <a href="#"><img src="img/blog-img/instagram-img-2.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                    <a href="#"><img src="img/blog-img/instagram-img-3.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                    <a href="#"><img src="img/blog-img/instagram-img-4.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                    <a href="#"><img src="img/blog-img/instagram-img-5.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                    <a href="#"><img src="img/blog-img/instagram-img-6.jpg" class="figure-img img-fluid" alt="blog-img"></a>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <div class="row three-grid">
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-21.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Give yourself freedom</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-22.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Digital Cameras sellers</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-23.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Movies included with</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-24.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Give yourself freedom</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-25.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Digital Cameras sellers</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-26.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Movies included with</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-21.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Give yourself freedom</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-22.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Digital Cameras sellers</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-23.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Movies included with</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-24.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Give yourself freedom</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-25.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Digital Cameras sellers</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-26.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Movies included with</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-24.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Give yourself freedom</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-25.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Digital Cameras sellers</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="blog-box">
+                            <div class="blog-date text-center">
+                                <h2 class="date">25</h2>
+                                <h4 class="monthe">March</h4>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog-img/blog-img-26.jpg" class="figure-img img-fluid" alt="blog-img">
+                            </div>
+                            <div class="blog-meta">
+                                <div class="d-flex justify-content-start">
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-like">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            115
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="comment">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                            59
+                                        </div>
+                                    </a>
+                                    <a href="single-blog-with.html">
+                                        <div class="blog-share">
+                                            <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                                            20
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-content-box">
+                                <a href="single-blog-with.html"><h4 class="blog-title">Movies included with</h4></a>
+                                <p class="blog-content">With precision crafted metal frame design, refined performance and Windows 10 built in, it’s the smart choice for your business.</p>
+                                <div class="raed-more">
+                                    <a class="btn btn-link" href="single-blog-with.html">
+                                        READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="float-right">
+                    <nav class="wd-pagination">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">First</a></li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">Last</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

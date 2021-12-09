@@ -1,5 +1,5 @@
-﻿@model ReviewWeb.Models.Comment
-@foreach (var item in ViewBag.Comments)
+﻿@model IEnumerable <ReviewWeb.Models.Comment>
+@foreach (var item in Model)
 {
     <div class="media main-comment">
         <div class="author-img">
@@ -8,7 +8,7 @@
         <div class="media-body">
             <div class="comment-content">
                 <img class="d-flex mr-3 author-comment-img" src="img/blog-img/author-img-2.png" alt="author-img">
-                <a href="#"><h5 class="mt-0 comment-author-name">@item.User.Fullname <span class="comment-date">@item.AddDate</span></h5></a>
+                <a href="#"><h5 class="mt-0 comment-author-name">@item.User.Fullname<span class="comment-date">@item.AddDate</span></h5></a>
                 <p class="single-page-comment-content">@item.Content</p>
 
             </div>
@@ -16,19 +16,3 @@
     </div>
 }
 
-<div class="single-comment-from">
-    <form method="post" action="/Home/Comment">
-        @Html.HiddenFor(x => x.PostID)
-        <div class="media main-comment">
-            <div class="author-img">
-                <label for="exampleInputPasswordwdfp">Bình luận</label>
-            </div>
-            <div class="media-body">
-                <div class="comment-content">
-                    <input type="text" name="commentContent" />
-                </div>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-default comment-submit-btn">Bình luận</button>
-    </form>
-</div>

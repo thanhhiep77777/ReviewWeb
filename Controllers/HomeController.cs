@@ -22,21 +22,15 @@ namespace ReviewWeb.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Comments = db.Comments.Where(x => x.PostID == p).OrderByDescending(x => x.AddDate).ToList();
+            ViewBag.Comments = db.Comments.Where(x => x.PostID == p).OrderByDescending(x => x.AddDate).Take(5).ToList();
             return View(post);
         }
-        public ActionResult Comment(int PostId, string commentContent)
+        public JsonResult Comment(int PostId, string commentContent)
         {
-            ViewBag.Comments = db.Comments.Where(x => x.PostID == PostId).OrderByDescending(x => x.AddDate).ToList();
-            if (db.Posts.FirstOrDefault(x => x.ID == PostId) == null)
+            int userID = 1;
+            if (db.Posts.FirstOrDefault(x => x.ID == PostId) != null && !(commentContent.Equals("") || commentContent == null))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }else if (commentContent.Equals("")||commentContent==null)
-            {
-                return PartialView("CommentForm");
-            }
-            else
-            {
+
                 try
                 {
                     Comment comment = new Comment();
@@ -48,14 +42,19 @@ namespace ReviewWeb.Controllers
 
                     db.Comments.Add(comment);
                     db.SaveChanges();
+                    return Json(new
+                    {
+                        Fullname = db.Users.First(x => x.ID == userID).Fullname,
+                        AddDate = comment.AddDate.ToString(),
+                        Content = comment.Content,
 
-                    return PartialView("CommentForm");
+                    }) ;
                 }
                 catch
                 {
-                    return Content("Có cl đòi comment");
                 }
             }
+            return Json("");
         }
         public ActionResult About()
         {
